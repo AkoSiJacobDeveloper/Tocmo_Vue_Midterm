@@ -1,9 +1,9 @@
 <template>
   <nav class="d-flex justify-content-center align-items-center">
-    <ul class="d-flex gap-4">
+    <ul class="d-flex gap-4 p-0 m-0">
       <li class="list-unstyled" v-for="(link, index) in links" :key="index">
         <router-link
-          class="text-decoration-none text-white fs-3 p-2 nav-link"
+          class="text-decoration-none text-white fs-5 p-2 nav-link"
           :to="link.href"
           >{{ link.text }}</router-link
         >

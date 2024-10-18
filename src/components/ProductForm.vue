@@ -58,7 +58,7 @@ export default {
   components: { ProductListVue },
   data() {
     return {
-      products: [], // Initialize the products array
+      products: [],
       isEditing: false,
       productName: '',
       productPrice: '',
@@ -70,13 +70,13 @@ export default {
     handleSubmit() {
       const productData = {
         name: this.productName,
-        price: parseFloat(this.productPrice), // Ensure price is a number
+        price: parseFloat(this.productPrice),
         description: this.productDescription,
       }
       if (this.isEditing) {
-        this.products[this.editIndex] = productData // Update existing product
+        this.products[this.editIndex] = productData
       } else {
-        this.products.push(productData) // Add new product
+        this.products.push(productData)
       }
       this.resetForm()
     },
@@ -85,14 +85,14 @@ export default {
       this.productPrice = ''
       this.productDescription = ''
       this.isEditing = false
-      this.editIndex = null // Reset edit index
+      this.editIndex = null
     },
     editProduct(product, index) {
       this.productName = product.name
       this.productPrice = product.price
       this.productDescription = product.description
       this.isEditing = true
-      this.editIndex = index // Store the index of the product being edited
+      this.editIndex = index
     },
   },
 }

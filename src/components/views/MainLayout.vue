@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 div {
   background-image: url('@/assets/Images/wave.svg');
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

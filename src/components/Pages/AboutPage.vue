@@ -7,7 +7,7 @@
       <div v-for="(step, index) in steps" :key="index">
         <h3 class="text-decoration-underline">{{ step.heading }}</h3>
         <ul>
-          <li v-for="(instruction, idx) in step.instructions" :key="idx">
+          <li class="instructions" v-for="(instruction, idx) in step.instructions" :key="idx">
             {{ instruction.text }}
           </li>
         </ul>
@@ -84,5 +84,6 @@ main {
   .instruction-container {
     border-left: 1px solid #eee;
   }
+
 }
 </style>
